@@ -44,10 +44,10 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
       <div className='w-full md-4 flex items-center justify-between'>
         <div className='hidden md:flex gap-x-2 items-center'>
           <button className='rounded-full bg-black flex items-center justify-center hover:opacity-75 transition'>
-            <RxCaretLeft size={35} />
+            <RxCaretLeft onClick={router.back} size={35} />
           </button>
           <button className='rounded-full bg-black flex items-center justify-center hover:opacity-75 transition'>
-            <RxCaretRight size={35} />
+            <RxCaretRight onClick={router.forward} size={35} />
           </button>
         </div>
         <div className='flex md:hidden gap-x-2 items-center'>
